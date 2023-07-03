@@ -1,0 +1,681 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --color-1: #363f3d;
+  --color-2: #8df7d0;
+  --color-3: #d5f5e9;
+  --color-4: #437563;
+  --color-5: #a9c2b9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--color-4);
+}
+
+/*============================================================================ HEADER */
+header.header {
+  width: 100vw;
+  height: 98px;
+  display: flex;
+  justify-content: center;
+}
+
+.header nav {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-3);
+  font-size: 28px;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+
+.header-logo:hover {
+  transition: 0.5s ease;
+  transform: scale(1.075);
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+}
+
+.header ul li {
+  padding: 0 20px;
+  border-right: 1px solid var(--color-3);
+}
+
+.header ul li:nth-child(3) {
+  border-right: none;
+}
+
+.header ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-3);
+  transition: color 0.5s ease;
+}
+
+.header ul li a:hover {
+  transition: color 0.5s ease;
+  color: var(--color-5);
+}
+
+.header-buttom {
+  height: 60px;
+  width: 310px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--color-1);
+  background-color: var(--color-3);
+  transition: 0.5s ease;
+}
+
+.header-buttom:hover {
+  transition: 0.5s ease;
+  transform: scale(1.075);
+}
+
+/*=============================================================================== CTA */
+section.cta {
+  width: 100vw;
+  height: 440px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-5);
+}
+
+.cta div {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.cta div h3 {
+  text-align: center;
+  font-size: 32px;
+  padding: 10px;
+  font-weight: 500;
+  line-height: 4;
+  color: var(--color-1);
+  transition: 0.5s ease;
+}
+
+.cta div span {
+  font-weight: 700;
+  color: var(--color-4);
+}
+
+/*============================================================================== MAIN */
+main.main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*================================================ MAIN-TOP */
+.main > .main-top {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.main-top > .main-top-img {
+  width: 300px;
+  height: 375px;
+  border: 5px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: url("/images/andre-foto-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transition: 0.5s ease;
+}
+
+.main-top > .main-top-img:hover {
+  transition: 0.5s ease;
+  transform: scale(1.085);
+}
+
+.main-top > .main-top-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45%;
+}
+
+.main-top > .main-top-text h3 {
+  color: var(--color-3);
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.main-top > .main-top-text p {
+  color: var(--color-3);
+  font-size: 16px;
+  line-height: 1.8;
+  padding: 30px 0;
+}
+
+.main-top > .main-top-text a {
+  height: 60px;
+  width: 310px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--color-1);
+  background-color: var(--color-3);
+  transition: 0.5s ease;
+}
+
+.main-top > .main-top-text a:hover {
+  transition: 0.5s ease;
+  transform: scale(1.075);
+}
+
+/*============================================= MAIN-BOTTOM */
+.main > .main-bottom {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.main-bottom > .main-bottom-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45%;
+}
+
+.main-bottom > .main-bottom-text h3 {
+  color: var(--color-3);
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.main-bottom > .main-bottom-text p {
+  color: var(--color-3);
+  font-size: 16px;
+  line-height: 1.8;
+  padding: 15px 0;
+}
+
+.main-bottom > .main-bottom-text a {
+  height: 60px;
+  width: 310px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--color-1);
+  background-color: var(--color-3);
+  transition: 0.5s ease;
+}
+
+.main-bottom > .main-bottom-text a:hover {
+  transition: 0.5s ease;
+  transform: scale(1.075);
+}
+
+.main-bottom > .main-bottom-img {
+  width: 300px;
+  height: 375px;
+  border-radius: 5px;
+  background-image: url("/images/andre-foto-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border: 5px solid white;
+  padding: 10px;
+
+  transition: 0.5s ease;
+}
+
+.main-bottom > .main-bottom-img:hover {
+  transition: 0.5s ease;
+  transform: scale(1.085);
+}
+
+/*==================================================================  SERVICES */
+section.services {
+  background-color: var(--color-5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.services h3 {
+  color: var(--color-1);
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.cards-services {
+  padding: 40px 0;
+  max-width: 1200px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.services-card {
+  border-radius: 5px;
+  background-color: var(--color-3);
+  width: 325px;
+  height: 350px;
+  padding: 10px;
+  transition: 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  background: #a9c2b9;
+  box-shadow: -20px 20px 60px #90a59d, 20px -20px 60px #c2dfd5;
+}
+
+.fa-solid {
+  color: var(--color-1);
+  font-size: 30px;
+  margin: 15px 0;
+}
+
+.services-card h3 {
+  font-weight: 600;
+  text-align: center;
+  font-size: 18px;
+  color: var(--color-1);
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.services-card p {
+  color: var(--color-1);
+  font-size: 14px;
+  line-height: 1.8;
+  text-align: center;
+  padding: 0 10px;
+  font-weight: 600;
+}
+
+.services-card:hover {
+  transition: 0.5s ease;
+  transform: scale(1.075);
+}
+
+/*==================================================================  FAQ */
+section.faq {
+  display: flex;
+  justify-content: center;
+}
+
+.faq-box {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  transition: 2s ease;
+}
+
+.faq-box h3 {
+  color: var(--color-3);
+  font-size: 42px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.checkbox-wrapper {
+  width: 70%;
+  background-color: var(--color-3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.checkbox-wrapper label {
+  cursor: pointer;
+  padding: 16px;
+  color: var(--color-1);
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.checkbox-wrapper label::after {
+  content: "+";
+  float: right;
+  transition: transform 0.5s ease;
+}
+
+.faq-box input {
+  display: none;
+}
+
+.checkbox-wrapper p {
+  display: none;
+  color: var(--color-1);
+  padding: 32px 40px 22px 20px;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.faq-box input:checked + .checkbox-wrapper p {
+  display: block;
+}
+
+.faq-box input:checked + .checkbox-wrapper label::after {
+  transition: transform 0.5s ease;
+  transform: rotate(135deg) scale(1.5);
+}
+
+/*==================================================================  FOOTER */
+footer.footer {
+  background-color: var(--color-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-description {
+  margin: 80px 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-description h3 {
+  cursor: pointer;
+  color: var(--color-3);
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+
+.footer-description h3:hover {
+  transition: 0.5s ease;
+  transform: scale(1.085);
+}
+
+.footer-description p {
+  color: var(--color-3);
+  margin-bottom: 20px;
+}
+
+.footer-description ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.footer-description ul li i {
+  color: var(--color-3);
+  padding: 10px;
+  font-size: 30px;
+  margin: 0 10px;
+  border-radius: 50%;
+  transition: 0.5s ease;
+}
+
+.footer-description ul li i:hover {
+  transition: 0.5s ease;
+  transform: scale(1.2);
+}
+
+.footer-copy {
+  width: 70%;
+  padding: 40px 0 20px 0;
+  text-align: center;
+  border-top: 1px solid var(--color-3);
+}
+
+.footer-copy p {
+  color: var(--color-3);
+}
+
+/*==================================================================== RESPONSIVIDADE */
+@media (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+  /*========================================================================== HEADER */
+  .header-logo {
+    font-size: 20px;
+  }
+  .header ul li {
+    padding: 0 12px;
+  }
+  .header ul li a {
+    font-size: 16px;
+  }
+  .header-buttom {
+    width: 220px;
+    font-size: 14px;
+  }
+  /*============================================================================= CTA */
+  .cta div {
+    padding: 0;
+  }
+  .cta div h3 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 4;
+  }
+  /*============================================================================ MAIN */
+  /*============================================= MAIN-TOP*/
+  .main-top > .main-top-img {
+    width: 250px;
+    height: 300px;
+  }
+  .main-top > .main-top-text h3 {
+    font-size: 28px;
+  }
+  .main-top > .main-top-text p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .main-top > .main-top-text a {
+    width: 220px;
+    font-size: 14px;
+  }
+  /*========================================== MAIN-BOTTOM*/
+  .main-bottom > .main-bottom-text h3 {
+    font-size: 28px;
+  }
+  .main-bottom > .main-bottom-text p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .main-bottom > .main-bottom-text a {
+    width: 220px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  /*========================================================================== HEADER */
+  header.header {
+    height: 210px;
+  }
+  .header-logo {
+    font-size: 24px;
+  }
+  .header nav {
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 20px;
+  }
+  .header-buttom {
+    height: 50px;
+  }
+  /*============================================================================= CTA */
+  .cta div h3 {
+    width: 468px;
+    font-weight: 700;
+    line-height: 3;
+  }
+  /*============================================================================ MAIN */
+  /*============================================= MAIN-TOP*/
+  .main > .main-top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-top > .main-top-img {
+    width: 80%;
+    height: 415px;
+  }
+  .main-top > .main-top-text {
+    align-items: start;
+    width: 80%;
+    padding-top: 20px;
+  }
+  .main-top > .main-top-text p {
+    text-align: start;
+  }
+  /*========================================== MAIN-BOTTOM*/
+  .main > .main-bottom {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-bottom > .main-bottom-text {
+    align-items: start;
+    width: 80%;
+    padding-top: 20px;
+  }
+  .main-bottom > .main-bottom-text p {
+    text-align: start;
+    padding: 20px 0;
+  }
+  .main-bottom > .main-bottom-img {
+    width: 80%;
+  }
+  /*======================================================================== SERVICES */
+  #services-h3 {
+    font-size: 36px;
+  }
+  .cards-services {
+    gap: 40px;
+  }
+  .services-card {
+    width: 305px;
+    height: 400px;
+  }
+  /*============================================================================= FAQ */
+  .checkbox-wrapper label {
+    font-size: 16px;
+  }
+  .checkbox-wrapper p {
+    font-size: 14px;
+    line-height: 2;
+  }
+  /*========================================================================== FOOTER */
+  .footer-copy {
+    width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+  /*============================================================================= CTA */
+  .cta div h3 {
+    width: 305px;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 2.9;
+  }
+  /*============================================================================ MAIN */
+  /*============================================= MAIN-TOP*/
+  .main-top > .main-top-img {
+    height: 300px;
+  }
+  /*========================================== MAIN-BOTTOM*/
+  .main-bottom > .main-bottom-img {
+    height: 300px;
+  }
+  /*======================================================================== SERVICES */
+  #services-h3 {
+    font-size: 28px;
+  }
+  .services-card {
+    width: 280px;
+    height: 420px;
+  }
+  /*============================================================================= FAQ */
+  .faq-box h3 {
+    font-size: 28px;
+  }
+  .checkbox-wrapper {
+    width: 90%;
+  }
+  /*========================================================================== FOOTER */
+  .footer-description h3 {
+    font-size: 28px;
+  }
+  .footer-copy {
+    width: 90%;
+  }
+  .footer-copy p {
+    font-size: 14px;
+  }
+} /*# sourceMappingURL=style.css.map */
