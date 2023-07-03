@@ -158,7 +158,7 @@ main.main {
 .main-top > .main-top-img {
   width: 300px;
   height: 375px;
-  border: 5px solid white;
+  border: 5px solid var(--color-3);
   padding: 10px;
   border-radius: 5px;
   background-image: url("/images/andre-foto-1.jpg");
@@ -270,7 +270,7 @@ main.main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  border: 5px solid white;
+  border: 5px solid var(--color-3);
   padding: 10px;
 
   transition: 0.5s ease;
